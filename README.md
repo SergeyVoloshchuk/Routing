@@ -1,11 +1,14 @@
 # Routing
 the task ui-routing with todo list
-
-## Installing Node.js and Bower Packages
+##Install Node.js
+-open https://nodejs.org/en/
+##Install HTTP-SERVER
+- Open terminal
+- Type `npm http-server -g install`
+## Installing npm Packages
 - Open terminal
 - Type `npm install`
 
 ## Installing Bower Packages
-`npm install` will install these too, but you can do it manually.
 - Open terminal
 - Type `bower install`
