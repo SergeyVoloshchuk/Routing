@@ -2,12 +2,6 @@ body {
     background-color: darkgrey;
 }
 
-.main {
-    position: relative;
-    margin-left: 18%;
-    margin-top: 15px;
-}
-
 .person {
     border: 1px solid black;
     position: relative;
@@ -32,7 +26,6 @@ body {
     border: 1px solid green;
     border-radius: 40px;
     margin-left: 250px;
-    margin-top: -248px;
     position: relative;
     padding: 10px;
     height: auto;
@@ -88,4 +81,28 @@ li {
     background-size: cover;
     margin-left: 450px;
     margin-top: -38px;
+}
+
+.navig {
+    position: relative;
+    width: auto;
+    height: 50px;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+}
+
+.nav-link li {
+    float: left;
+}
+
+.nav-link a {
+    display: block;
+    padding: 1em;
+    border-right: 1px solid #ADC0CE;
+    background: rgba(173, 192, 206, .3);
+    color: #29838C;
+}
+
+.nav-link a:hover {
+    background: #ADC0CE
 }
