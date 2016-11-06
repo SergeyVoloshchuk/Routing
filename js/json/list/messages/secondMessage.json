@@ -1,0 +1,14 @@
+{
+
+    "messages": [
+        {
+            "mess": "Message from second person",
+            "flag": false
+        },
+        {
+            "mess": "lol? wft ",
+            "flag": false
+        }
+
+    ]
+}

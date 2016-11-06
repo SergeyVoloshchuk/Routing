@@ -1,0 +1,17 @@
+{
+
+    "messages": [
+        {
+            "mess": "Message from third person",
+            "flag": false
+        },
+        {
+            "mess": "Hi, how are you? ",
+            "flag": false
+        }, {
+            "mess": "wow, great job",
+            "flag": false
+        }
+
+    ]
+}
