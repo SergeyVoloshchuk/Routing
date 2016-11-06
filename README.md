@@ -1,7 +1,7 @@
 # Routing
 the task ui-routing with todo list
 ## Install Node.js
--open https://nodejs.org/en/
+- open https://nodejs.org/en/
 
 ## Install HTTP-SERVER
 - Open terminal
@@ -14,6 +14,7 @@ the task ui-routing with todo list
 ## Installing Bower Packages
 - Open terminal in the project directory
 - Type `bower install`
+
 ## Get Start
 - Open terminal in the project directory
 - Type `http-server start -p 8000`
