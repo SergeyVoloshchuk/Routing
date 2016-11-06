@@ -11,61 +11,24 @@
 
 <body>
     <div class="main" ng-controller="MainController as main">
-        <div class="person">
-            Name: {{main.person.name}}
-            <br> Surname: {{main.person.surname}}
-            <br> Age: {{main.person.age}}
-            <div>
-                Номер аккаунта: {{main.list.id}}
+
+
+
+        <div class="navig">
+
+            <div class="nav-link ">
+                <ul>
+                    <li> <a ui-sref="main">Main Page</a></li>
+                    <li> <a ui-sref="profile">Profile</a></li>
+                    <li><a ui-sref="messages">Messages</a></li>
+                    <li><a ui-sref="list">TODO list</a></li>
+                </ul>
             </div>
-            <br>
-            <center>
-                <button class="karusel" ng-click="main.random()"> </button>
-            </center>
+
+
+
         </div>
-
-        <div class="message">
-
-            <h1>You have [{{main.countMess}}/{{main.messages.length}}] messages:</h1>
-            <span ng-repeat="message in main.messages ">
-             <br>
-
-            <span ng-click="main.onRead($index)" ng-mouseleave="flag = false" ng-mouseover="flag = true" class="mess-{{flag}}" >{{message.mess}}
-
-            <span class="read-{{message.flag}}"></span>
-            </span>
-
-            <br>
-            </span>
-        </div>
-        <div class="list">
-            <center>
-                <h3>This is your TODO list, {{main.person.name}} </h3>
-                <p>Поиск :
-                    <input type="text" ng-model="seach">
-
-                </p>
-            </center>
-            <li ng-repeat="todo in main.list.todo | filter:{name:seach}">
-                <label class="checkbox">
-                    <input type="checkbox" ng-model="todo.flag">
-                    <span class="done-{{todo.flag}}">{{todo.name}}
-
-
-                    </span>
-                </label>
-            </li>
-            <form ng-submit="main.addTodo()">
-
-                <br>
-                <center>
-                    Enter text:
-                    <input type="text" ng-model="main.todoText" size="20" placeholder="add new todo here">
-                    <input type="submit" value="add">
-                </center>
-            </form>
-        </div>
-
+        <ui-view></ui-view>
     </div>
     <script src="js/main.js"></script>
     <script src="js/controller/main.controller.js"></script>
@@ -75,6 +38,7 @@
     <script src="js/modules/list.module.js"></script>
     <script src="js/modules/message.module.js"></script>
     <script src="js/services/list.service.js"></script>
+    <script src="js/configs/rout.config.js"></script>
 
 
 </body>
