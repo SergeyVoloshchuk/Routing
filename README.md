@@ -1,10 +1,12 @@
 # Routing
 the task ui-routing with todo list
-##Install Node.js
+## Install Node.js
 -open https://nodejs.org/en/
-##Install HTTP-SERVER
+
+## Install HTTP-SERVER
 - Open terminal
 - Type `npm http-server -g install`
+
 ## Installing npm Packages
 - Open terminal
 - Type `npm install`
