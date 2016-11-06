@@ -2,7 +2,7 @@
     'use strict';
 
     angular.module('app').controller('MainController', MainController);
-    MainController.$inject = ['dataService', 'pathFactory', 'listService'];
+    MainController.$inject = ['dataService', 'pathFactory', 'listService', ];
 
     function MainController(dataService, pathFactory, listService) {
         var vm = this;

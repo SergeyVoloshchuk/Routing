@@ -4,6 +4,7 @@
   // Helpers modules
         'app.helpers',
         'app.list',
-        'app.message'
+        'app.message',
+        'ui.router'
     ]);
 })();
