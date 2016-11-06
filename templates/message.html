@@ -1,0 +1,14 @@
+<div class="message">
+
+    <h1>You have [{{main.countMess}}/{{main.messages.length}}] messages:</h1>
+    <span ng-repeat="message in main.messages ">
+             <br>
+
+            <span ng-click="main.onRead($index)" ng-mouseleave="flag = false" ng-mouseover="flag = true" class="mess-{{flag}}" >{{message.mess}}
+
+            <span class="read-{{message.flag}}"></span>
+    </span>
+
+    <br>
+    </span>
+</div>
