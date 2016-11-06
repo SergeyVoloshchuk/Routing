@@ -5,6 +5,12 @@
         .config(RoutingConfig);
 
     function RoutingConfig($stateProvider) {
+        var parent = {
+            name: 'parent',
+            url: '',
+            template: '',
+            abstract: true
+        }
         var state = {
             name: 'main',
             url: '',
